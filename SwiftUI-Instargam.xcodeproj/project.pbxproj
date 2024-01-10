@@ -51,6 +51,11 @@
 		47E5CB162B4D2E240011A921 /* SwiftUI-Instargam */ = {
 			isa = PBXGroup;
 			children = (
+				47E5CB292B4E8C8D0011A921 /* API */,
+				47E5CB282B4E8C840011A921 /* Utils */,
+				47E5CB272B4E8C7E0011A921 /* Model */,
+				47E5CB262B4E8C770011A921 /* ViewModel */,
+				47E5CB252B4E8C700011A921 /* View */,
 				47E5CB172B4D2E240011A921 /* SwiftUI_InstargamApp.swift */,
 				47E5CB192B4D2E240011A921 /* ContentView.swift */,
 				47E5CB1B2B4D2E260011A921 /* Assets.xcassets */,
@@ -65,6 +70,41 @@
 				47E5CB1E2B4D2E260011A921 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47E5CB252B4E8C700011A921 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47E5CB262B4E8C770011A921 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		47E5CB272B4E8C7E0011A921 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47E5CB282B4E8C840011A921 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		47E5CB292B4E8C8D0011A921 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
