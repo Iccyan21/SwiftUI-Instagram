@@ -11,6 +11,13 @@
 		47E5CB1A2B4D2E240011A921 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB192B4D2E240011A921 /* ContentView.swift */; };
 		47E5CB1C2B4D2E260011A921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E5CB1B2B4D2E260011A921 /* Assets.xcassets */; };
 		47E5CB1F2B4D2E260011A921 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E5CB1E2B4D2E260011A921 /* Preview Assets.xcassets */; };
+		47E5CB302B4E8FAF0011A921 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB2F2B4E8FAF0011A921 /* ProfileView.swift */; };
+		47E5CB322B4E8FC90011A921 /* NotficationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB312B4E8FC90011A921 /* NotficationsView.swift */; };
+		47E5CB352B4E8FE90011A921 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB342B4E8FE90011A921 /* SearchView.swift */; };
+		47E5CB372B4E8FF20011A921 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB362B4E8FF20011A921 /* FeedView.swift */; };
+		47E5CB392B4E8FFC0011A921 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB382B4E8FFC0011A921 /* MainView.swift */; };
+		47E5CB3D2B4E91120011A921 /* UploadViewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB3C2B4E91120011A921 /* UploadViewPost.swift */; };
+		47E5CB3F2B4E92490011A921 /* FeedCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB3E2B4E92490011A921 /* FeedCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		47E5CB192B4D2E240011A921 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47E5CB1B2B4D2E260011A921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47E5CB1E2B4D2E260011A921 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47E5CB2F2B4E8FAF0011A921 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		47E5CB312B4E8FC90011A921 /* NotficationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotficationsView.swift; sourceTree = "<group>"; };
+		47E5CB342B4E8FE90011A921 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		47E5CB362B4E8FF20011A921 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		47E5CB382B4E8FFC0011A921 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		47E5CB3C2B4E91120011A921 /* UploadViewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewPost.swift; sourceTree = "<group>"; };
+		47E5CB3E2B4E92490011A921 /* FeedCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +71,6 @@
 				47E5CB262B4E8C770011A921 /* ViewModel */,
 				47E5CB252B4E8C700011A921 /* View */,
 				47E5CB172B4D2E240011A921 /* SwiftUI_InstargamApp.swift */,
-				47E5CB192B4D2E240011A921 /* ContentView.swift */,
 				47E5CB1B2B4D2E260011A921 /* Assets.xcassets */,
 				47E5CB1D2B4D2E260011A921 /* Preview Content */,
 			);
@@ -75,6 +88,12 @@
 		47E5CB252B4E8C700011A921 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47E5CB3A2B4E90F60011A921 /* Upload */,
+				47E5CB2E2B4E8F970011A921 /* Profile */,
+				47E5CB2D2B4E8F8D0011A921 /* Notfications */,
+				47E5CB2C2B4E8F850011A921 /* Search */,
+				47E5CB2B2B4E8F800011A921 /* Feed */,
+				47E5CB2A2B4E8F7A0011A921 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +124,56 @@
 			children = (
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		47E5CB2A2B4E8F7A0011A921 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				47E5CB192B4D2E240011A921 /* ContentView.swift */,
+				47E5CB382B4E8FFC0011A921 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		47E5CB2B2B4E8F800011A921 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				47E5CB362B4E8FF20011A921 /* FeedView.swift */,
+				47E5CB3E2B4E92490011A921 /* FeedCall.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		47E5CB2C2B4E8F850011A921 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				47E5CB342B4E8FE90011A921 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		47E5CB2D2B4E8F8D0011A921 /* Notfications */ = {
+			isa = PBXGroup;
+			children = (
+				47E5CB312B4E8FC90011A921 /* NotficationsView.swift */,
+			);
+			path = Notfications;
+			sourceTree = "<group>";
+		};
+		47E5CB2E2B4E8F970011A921 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				47E5CB2F2B4E8FAF0011A921 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		47E5CB3A2B4E90F60011A921 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				47E5CB3C2B4E91120011A921 /* UploadViewPost.swift */,
+			);
+			path = Upload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +246,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E5CB352B4E8FE90011A921 /* SearchView.swift in Sources */,
+				47E5CB392B4E8FFC0011A921 /* MainView.swift in Sources */,
 				47E5CB1A2B4D2E240011A921 /* ContentView.swift in Sources */,
+				47E5CB322B4E8FC90011A921 /* NotficationsView.swift in Sources */,
+				47E5CB3F2B4E92490011A921 /* FeedCall.swift in Sources */,
+				47E5CB302B4E8FAF0011A921 /* ProfileView.swift in Sources */,
+				47E5CB3D2B4E91120011A921 /* UploadViewPost.swift in Sources */,
+				47E5CB372B4E8FF20011A921 /* FeedView.swift in Sources */,
 				47E5CB182B4D2E240011A921 /* SwiftUI_InstargamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
