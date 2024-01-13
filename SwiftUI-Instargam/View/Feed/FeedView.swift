@@ -9,7 +9,15 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        Text("Feed")
+        // タイムライン
+        ScrollView{
+            LazyVStack(spacing: 32){
+                // 10件回す
+                ForEach(0 ..< 10){ _ in
+                    FeedCall()
+                }
+            }
+        }
     }
 }
 

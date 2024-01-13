@@ -17,7 +17,7 @@ struct FeedCall: View {
                     .frame(width: 36,height: 36)
                     .clipped()
                     .cornerRadius(18)
-                Text("shibainu")
+                Text("柴犬")
                     .font(.system(size: 14,weight: .semibold))
             }
             .padding([.leading,.bottom],8)
@@ -25,7 +25,7 @@ struct FeedCall: View {
             Image("Shibainu")
                 .resizable()
                 .scaledToFill()
-                .frame(maxWidth: 440)
+                .frame(maxHeight: 440)
                 .clipped()
             
             HStack(spacing: 16){
@@ -52,8 +52,27 @@ struct FeedCall: View {
                     .frame(width: 20,height: 20)
                     .font(.system(size: 20))
                     .padding(4)
-                
             }
+            .padding(.leading,4)
+            .foregroundColor(.black)
+            
+            Text("25 likes")
+                .font(.system(size: 14,weight: .semibold))
+                .padding(.leading,8)
+                .padding(.bottom,0.5)
+            
+            // 名前とコンテキスト
+            HStack {
+                
+                Text("Shibainu").font(.system(size: 14,weight: .semibold)) + Text("ワイのイッヌや").font(.system(size: 14))
+            }
+            .padding(.horizontal,8)
+            // 時間
+            Text("2H")
+                .font(.system(size: 14))
+                .foregroundColor(.gray)
+                .padding(.leading,8)
+                .padding(.top,-2)
         }
     }
 }
