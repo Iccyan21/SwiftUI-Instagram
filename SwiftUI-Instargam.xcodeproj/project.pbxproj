@@ -24,6 +24,10 @@
 		47E5CB482B52AF8F0011A921 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB472B52AF8F0011A921 /* UserListView.swift */; };
 		47E5CB4A2B52AFA20011A921 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB492B52AFA20011A921 /* UserCell.swift */; };
 		47E5CB4C2B52B4090011A921 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB4B2B52B4090011A921 /* NotificationCell.swift */; };
+		47E5CB562B539B800011A921 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB552B539B800011A921 /* TextArea.swift */; };
+		47E5CB582B539B9D0011A921 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB572B539B9C0011A921 /* ProfileHeaderView.swift */; };
+		47E5CB5A2B539BB10011A921 /* UserStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB592B539BB10011A921 /* UserStates.swift */; };
+		47E5CB5C2B539BC90011A921 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB5B2B539BC90011A921 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		47E5CB472B52AF8F0011A921 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		47E5CB492B52AFA20011A921 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		47E5CB4B2B52B4090011A921 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		47E5CB552B539B800011A921 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		47E5CB572B539B9C0011A921 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		47E5CB592B539BB10011A921 /* UserStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStates.swift; sourceTree = "<group>"; };
+		47E5CB5B2B539BC90011A921 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				47E5CB452B52ABC80011A921 /* Extensions.swift */,
+				47E5CB5B2B539BC90011A921 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -180,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				47E5CB2F2B4E8FAF0011A921 /* ProfileView.swift */,
+				47E5CB572B539B9C0011A921 /* ProfileHeaderView.swift */,
+				47E5CB592B539BB10011A921 /* UserStates.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 				47E5CB412B52A3190011A921 /* PostGridView.swift */,
 				47E5CB472B52AF8F0011A921 /* UserListView.swift */,
 				47E5CB492B52AFA20011A921 /* UserCell.swift */,
+				47E5CB552B539B800011A921 /* TextArea.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -272,13 +284,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E5CB5A2B539BB10011A921 /* UserStates.swift in Sources */,
 				47E5CB352B4E8FE90011A921 /* SearchView.swift in Sources */,
 				47E5CB392B4E8FFC0011A921 /* MainView.swift in Sources */,
 				47E5CB1A2B4D2E240011A921 /* ContentView.swift in Sources */,
 				47E5CB322B4E8FC90011A921 /* NotficationsView.swift in Sources */,
+				47E5CB582B539B9D0011A921 /* ProfileHeaderView.swift in Sources */,
 				47E5CB422B52A3190011A921 /* PostGridView.swift in Sources */,
+				47E5CB5C2B539BC90011A921 /* ImagePicker.swift in Sources */,
 				47E5CB3F2B4E92490011A921 /* FeedCall.swift in Sources */,
 				47E5CB4A2B52AFA20011A921 /* UserCell.swift in Sources */,
+				47E5CB562B539B800011A921 /* TextArea.swift in Sources */,
 				47E5CB302B4E8FAF0011A921 /* ProfileView.swift in Sources */,
 				47E5CB462B52ABC90011A921 /* Extensions.swift in Sources */,
 				47E5CB3D2B4E91120011A921 /* UploadViewPost.swift in Sources */,
