@@ -28,6 +28,10 @@
 		47E5CB582B539B9D0011A921 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB572B539B9C0011A921 /* ProfileHeaderView.swift */; };
 		47E5CB5A2B539BB10011A921 /* UserStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB592B539BB10011A921 /* UserStates.swift */; };
 		47E5CB5C2B539BC90011A921 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB5B2B539BC90011A921 /* ImagePicker.swift */; };
+		47E5CB5F2B5557A90011A921 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB5E2B5557A90011A921 /* RegisterView.swift */; };
+		47E5CB612B5557BD0011A921 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB602B5557BD0011A921 /* SignInView.swift */; };
+		47E5CB632B5559620011A921 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB622B5559620011A921 /* CustomTextField.swift */; };
+		47E5CB652B555BC00011A921 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E5CB642B555BC00011A921 /* CustomSecureField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,10 @@
 		47E5CB572B539B9C0011A921 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		47E5CB592B539BB10011A921 /* UserStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStates.swift; sourceTree = "<group>"; };
 		47E5CB5B2B539BC90011A921 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		47E5CB5E2B5557A90011A921 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		47E5CB602B5557BD0011A921 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		47E5CB622B5559620011A921 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		47E5CB642B555BC00011A921 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 		47E5CB252B4E8C700011A921 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47E5CB5D2B55574D0011A921 /* Authencations */,
 				47E5CB402B52A3060011A921 /* Items */,
 				47E5CB3A2B4E90F60011A921 /* Upload */,
 				47E5CB2E2B4E8F970011A921 /* Profile */,
@@ -138,6 +147,8 @@
 			children = (
 				47E5CB452B52ABC80011A921 /* Extensions.swift */,
 				47E5CB5B2B539BC90011A921 /* ImagePicker.swift */,
+				47E5CB622B5559620011A921 /* CustomTextField.swift */,
+				47E5CB642B555BC00011A921 /* CustomSecureField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -214,6 +225,15 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
+		47E5CB5D2B55574D0011A921 /* Authencations */ = {
+			isa = PBXGroup;
+			children = (
+				47E5CB5E2B5557A90011A921 /* RegisterView.swift */,
+				47E5CB602B5557BD0011A921 /* SignInView.swift */,
+			);
+			path = Authencations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -285,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E5CB5A2B539BB10011A921 /* UserStates.swift in Sources */,
+				47E5CB5F2B5557A90011A921 /* RegisterView.swift in Sources */,
 				47E5CB352B4E8FE90011A921 /* SearchView.swift in Sources */,
 				47E5CB392B4E8FFC0011A921 /* MainView.swift in Sources */,
 				47E5CB1A2B4D2E240011A921 /* ContentView.swift in Sources */,
@@ -295,11 +316,14 @@
 				47E5CB3F2B4E92490011A921 /* FeedCall.swift in Sources */,
 				47E5CB4A2B52AFA20011A921 /* UserCell.swift in Sources */,
 				47E5CB562B539B800011A921 /* TextArea.swift in Sources */,
+				47E5CB632B5559620011A921 /* CustomTextField.swift in Sources */,
 				47E5CB302B4E8FAF0011A921 /* ProfileView.swift in Sources */,
 				47E5CB462B52ABC90011A921 /* Extensions.swift in Sources */,
 				47E5CB3D2B4E91120011A921 /* UploadViewPost.swift in Sources */,
+				47E5CB612B5557BD0011A921 /* SignInView.swift in Sources */,
 				47E5CB372B4E8FF20011A921 /* FeedView.swift in Sources */,
 				47E5CB442B52A6320011A921 /* SearchBar.swift in Sources */,
+				47E5CB652B555BC00011A921 /* CustomSecureField.swift in Sources */,
 				47E5CB182B4D2E240011A921 /* SwiftUI_InstargamApp.swift in Sources */,
 				47E5CB4C2B52B4090011A921 /* NotificationCell.swift in Sources */,
 				47E5CB482B52AF8F0011A921 /* UserListView.swift in Sources */,
