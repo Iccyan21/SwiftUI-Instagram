@@ -1,18 +1,19 @@
 //
-//  SignInView.swift
+//  ForgetPasswordView.swift
 //  SwiftUI-Instargam
 //
-//  Created by 水原　樹 on 2024/01/15.
+//  Created by 水原　樹 on 2024/01/18.
 //
 
 import SwiftUI
 
-struct SignInView: View {
+struct ForgetPasswordView: View {
     
-    @State var email = ""
-    @State var username = ""
-    @State var fullname = ""
-    @State var password = ""
+    @Binding var email: String
+    
+    init(email: Binding<String>) {
+        self._email = email
+    }
     
     var body: some View {
         NavigationView{
@@ -29,17 +30,14 @@ struct SignInView: View {
                         .cornerRadius(10)
                         .foregroundColor(.gray)
                         .padding(.horizontal,32)
-                    
-                    CustomSecureField(text: $password, placeholder: Text("Password"), imageName: "envelope")
-                        .padding()
-                        .padding(.horizontal,32)
+          
                     
                     HStack {
                         Spacer()
                         
-                        NavigationLink(destination: ForgetPasswordView(email: $email).navigationBarHidden(true), label: {
+                        NavigationLink(destination: SignInView(), label: {
                             
-                            Text("Forget Password")
+                            Text("Go back")
                                 .font(.system(size: 13,weight: .semibold))
                                 .foregroundColor(.gray)
                                 .padding(.top)
@@ -60,7 +58,7 @@ struct SignInView: View {
                 })
                 Spacer()
                 
-                NavigationLink(destination: RegisterView().navigationBarHidden(true),
+                NavigationLink(destination: SignInView(),
                                label:{
                     HStack {
                         Text("アカウントを登録")
@@ -74,7 +72,9 @@ struct SignInView: View {
         }
     }
 }
-
-#Preview {
-    SignInView()
+        
+struct ForgetPasswordView_Previews: PreviewProvider {
+    static var previews: some View {
+        ForgetPasswordView(email: .constant("email"))
+    }
 }

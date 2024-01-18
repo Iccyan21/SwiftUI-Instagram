@@ -10,6 +10,8 @@ import SwiftUI
 struct RegisterView: View {
     
     @State var email = ""
+    @State var username = ""
+    @State var fullname = ""
     @State var password = ""
     
     var body: some View {
@@ -21,8 +23,20 @@ struct RegisterView: View {
                     .frame(width: 220,height: 220)
                     .foregroundColor(.black)
                 
-                VStack(spacing: 32){
+                VStack(spacing: -16){
                     CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
+                        .padding()
+                        .cornerRadius(10)
+                        .foregroundColor(.gray)
+                        .padding(.horizontal,32)
+                    
+                    CustomTextField(text: $username, placeholder: Text("Username"), imageName: "person")
+                        .padding()
+                        .cornerRadius(10)
+                        .foregroundColor(.gray)
+                        .padding(.horizontal,32)
+                    
+                    CustomTextField(text: $fullname, placeholder: Text("Fullname"), imageName: "person")
                         .padding()
                         .cornerRadius(10)
                         .foregroundColor(.gray)
@@ -55,22 +69,19 @@ struct RegisterView: View {
                 })
                 Spacer()
                 
-                NavigationLink(destination: SignInView(),
+                NavigationLink(destination: SignInView()
+                    .navigationBarBackButtonHidden(true),
                                label:{
                     HStack {
-                        Text("Dont have account")
+                        Text("既にアカウントを持っていますか？")
                             .font(.system(size: 14,weight: .semibold))
-                        Text("Sign In")
+                        Text("ログイン")
                             .font(.system(size: 14))
                     }
                     
-                }
-                                
-                )
-                
-                
+                })
             }
-            
+            .padding(.top,-10)
         }
     }
 }
